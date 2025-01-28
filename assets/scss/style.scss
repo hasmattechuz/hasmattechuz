@@ -1,0 +1,34 @@
+@use 'components/banner_slider1';
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700);
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+  --background-color: #000;
+  --text-color: #fff;
+  --button-color: #fff;
+  --bs-gutter-x: 30px;
+}
+
+// Global Styles
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl,
+.row {
+  --bs-gutter-x: 30px;
+}
