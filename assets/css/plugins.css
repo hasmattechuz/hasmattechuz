@@ -21,6 +21,13 @@
     animation-delay: var(--animate-delay);
 }
 
+.animate__animated.animate__delay-1_5s {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+}
+
 .animate__animated.animate__delay-2s {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
@@ -96,3 +103,12 @@ print {
 }
 
 /* End of animate.min.css */
+
+.download_link_dv {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 99;
+    background: #111;
+    border-radius: 24px;
+}
