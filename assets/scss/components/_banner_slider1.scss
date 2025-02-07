@@ -1,3 +1,7 @@
+/*********************************/
+/******** Banner SCSS ************/
+/*********************************/
+
 .swiper-hero {
     position: relative;
     color: #fff;
@@ -184,28 +188,8 @@
         }
     }
 }
-/* End of Swiper Pagination Dot */
 
-.btn-outline-white {
-    --bs-btn-color: #fff;
-    --bs-btn-border-color: #fff;
-    --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #fff;
-    --bs-btn-hover-border-color: #fff;
-    --bs-btn-focus-shadow-rgb: 255, 255, 255;
-    --bs-btn-active-color: #343f52;
-    --bs-btn-active-bg: #fff;
-    --bs-btn-active-border-color: #fff;
-    --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #fff;
-    --bs-gradient: none;
-    --bs-btn-padding-y: 0.75rem;
-    --bs-btn-padding-x: 1.5rem;
-    --bs-btn-font-size: 1rem;
-    --bs-btn-border-radius: 4rem;
-}
+/* End of Swiper Pagination Dot */
 
 @media (max-width:1200px) {
     .swiper-txt-card {
@@ -237,7 +221,7 @@
 
     .swiper-hero {
         .swiper-slide {
-            min-height: 500px;
+            min-height: 600px;
         }
     }
 }
@@ -249,7 +233,7 @@
 
     .swiper-hero {  
         .swiper-slide {
-            min-height: 400px;
+            min-height: 500px;
         }
 
         h2 {
@@ -282,3 +266,7 @@
         }
     }
 }
+
+/*****************************/
+/***** End of Banner SCSS ****/
+/*****************************/
