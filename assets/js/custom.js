@@ -7,6 +7,7 @@ var theme = {
   init: function () {
     theme.backgroundImage();
     theme.swiperSlider();
+    theme.addEventListeners();
   },
 
   /*** Background Image * Adds a background image link via data attribute "data-image-src" */
@@ -22,6 +23,12 @@ var theme = {
         bg[i].style.backgroundImage = "url('" + url + "')";
       }
     }
+  },
+
+  /*** Add event listeners for resize and orientation change */
+  addEventListeners: () => {
+    window.addEventListener("resize", theme.backgroundImage);
+    window.addEventListener("orientationchange", theme.backgroundImage);
   },
 
   swiperSlider: function () {
@@ -196,11 +203,9 @@ var theme = {
 };
 
 theme.init();
-
 /*********************************/
 /***** End of Banner Script ******/
 /*********************************/
-
 
 /*********************************/
 /***** Header Script ******/
@@ -236,6 +241,17 @@ $(document).ready(function () {
   // Prevent event bubbling for clicks inside the nav-dv div to avoid closing on itself
   $navDv.on("click", function (event) {
     event.stopPropagation();
+  });
+
+  $(window).scroll(function () {
+    var sticky = $(".header"),
+      scroll = $(window).scrollTop();
+
+    if (scroll >= 190) {
+      sticky.addClass("header-sticky");
+    } else {
+      sticky.removeClass("header-sticky");
+    }
   });
 });
 

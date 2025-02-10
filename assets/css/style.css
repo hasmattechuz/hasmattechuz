@@ -99,6 +99,8 @@ a {
   z-index: 9999;
   background: rgba(33, 38, 44, 0);
   backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: all 0.8s;
 }
 
 .logo-dv {
@@ -233,6 +235,12 @@ a {
 
 .backdrop-menu {
   display: none;
+}
+
+.header.header-sticky {
+  background: rgba(33, 38, 44, 0.5);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 @media (max-width: 1024px) {
@@ -735,7 +743,7 @@ footer {
     padding: 0;
   }
   .swiper-hero .swiper-slide {
-    min-height: 500px;
+    min-height: 600px;
   }
   .swiper-hero .swiper-navigation {
     display: none;
