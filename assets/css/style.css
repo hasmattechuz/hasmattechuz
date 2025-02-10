@@ -17,7 +17,8 @@ body {
   font-weight: 400;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -40,7 +41,8 @@ a {
   --bs-gutter-x: 30px;
 }
 
-.btn {
+.btn,
+a {
   transition: all 0.3s;
 }
 
@@ -87,7 +89,6 @@ a {
   --bs-btn-bg: #0d6efd;
 }
 
-/* Import component styles */
 /*********************************/
 /******** Header SCSS ************/
 /*********************************/
@@ -140,27 +141,44 @@ a {
   flex-wrap: wrap;
   gap: 36px;
 }
+.nav-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
 .nav-list li a {
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
   --primary-color: #fff;
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  padding: 4px 0;
+  padding: 13px 0;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
   position: relative;
 }
 .nav-list li a::before, .nav-list li a::after {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -0.1rem;
+  bottom: 10px;
   display: block;
   width: 100%;
   height: 1px;
   background: var(--primary-color);
   transition: 1.1s var(--ease-out-expo);
   opacity: 0;
+}
+.nav-list li a i.fa-angle-down {
+  top: 2px;
+  position: relative;
+  font-size: 14px;
+  transform: rotate(0deg);
+  transition: all 0.6s;
 }
 .nav-list li a::before {
   transform: scaleX(0);
@@ -189,6 +207,36 @@ a {
   transform: scaleX(0);
   transition-delay: 0s;
   opacity: 1;
+}
+.nav-list li ul.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 152px;
+  padding: 8px 0;
+  background: #fff;
+  border-radius: 10px;
+  will-change: transform;
+  transform: translate(0) scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s;
+}
+.nav-list li ul.dropdown a {
+  color: #000;
+  padding: 5px 15px;
+  width: 100%;
+  font-size: 16px;
+}
+.nav-list li ul.dropdown a:hover {
+  color: #0d6efd;
+}
+.nav-list li:hover a i.fa-angle-down {
+  top: 0;
+  transform: rotate(-180deg);
+}
+.nav-list li:hover ul.dropdown {
+  transform: translate(0) scaleY(100%);
 }
 
 .btn-menu-dv {
@@ -276,7 +324,42 @@ a {
   }
   .nav-dv .nav-list {
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
+  }
+  .nav-dv .nav-list li {
+    width: 100%;
+  }
+  .nav-dv .nav-list li > a {
+    width: 100%;
+  }
+  .nav-dv .nav-list li > a::before {
+    display: none;
+  }
+  .nav-dv .nav-list li a i.fa-angle-down {
+    margin-left: auto;
+    top: 0;
+    transform: none;
+  }
+  .nav-dv .nav-list li a i.fa-angle-down::before {
+    content: "+";
+  }
+  .nav-dv .nav-list li ul.dropdown {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: none;
+    transform: none;
+  }
+  .nav-dv .nav-list li:hover ul.dropdown {
+    transform: none;
+    position: relative;
+    display: none;
+  }
+  .nav-dv .nav-list li.menu-item-has-children.active i.fa-angle-down::before {
+    content: "\f068";
+  }
+  .nav-dv .nav-list li.menu-item-has-children.active ul.dropdown {
+    display: block;
   }
   .btn-menu-dv {
     display: flex;

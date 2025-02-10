@@ -253,6 +253,16 @@ $(document).ready(function () {
       sticky.removeClass("header-sticky");
     }
   });
+
+  document.querySelectorAll("header i.fa-angle-down").forEach(function (icon) {
+    icon.addEventListener("click", function (event) {
+      event.preventDefault();
+      let submenu = this.closest(".menu-item-has-children").querySelector("ul");
+      submenu.classList.toggle("active");
+      this.parentElement.parentElement.classList.toggle("active");
+      event.stopPropagation();
+    });
+  });
 });
 
 
