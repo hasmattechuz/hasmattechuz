@@ -1,7 +1,3 @@
-@use 'components/banner_slider1';
-@use 'components/marquee';
-@use 'components/header';
-@use 'components/footer';
 @import url(https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700);
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
@@ -92,3 +88,9 @@ a {
   --bs-btn-border-radius: 4rem;
   --bs-btn-bg: #0d6efd;
 }
+
+/* Import component styles */
+@import 'components/header';
+@import 'components/footer';
+@import 'components/banner_slider1';
+@import 'components/marquee';
