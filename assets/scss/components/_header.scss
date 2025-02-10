@@ -167,7 +167,7 @@
     display: none;
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .backdrop-menu {
         display: none;
         width: 100dvw;
@@ -227,11 +227,11 @@
         }
 
         .line:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
+            transform: translateY(7px) rotate(0deg);
         }
 
         .line:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
+            transform: translateY(-7px) rotate(0deg);
         }
     }
 
@@ -262,15 +262,23 @@
             .line {
                 opacity: 1;
             }
+
+            .line:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .line:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+        }
+
+        .backdrop-menu {
+            display: flex;
         }
     }
 
     .active-huburger-body {
         overflow: hidden;
-
-        .backdrop-menu {
-            display: flex;
-        }
     }
 }
 
@@ -286,7 +294,7 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .header-dv {
         column-gap: 15px;
         padding: 10px 0;
@@ -303,7 +311,9 @@
         gap: 10px;
     }
 
-    .btn, .btn-outline-white, .btn-primary-fill {
+    .btn,
+    .btn-outline-white,
+    .btn-primary-fill {
         --bs-btn-padding-y: 0.5rem;
         --bs-btn-padding-x: 1rem;
         --bs-btn-font-size: 14px;

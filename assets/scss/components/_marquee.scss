@@ -18,6 +18,9 @@
         flex-wrap: nowrap;
         gap: 12px;
         white-space: nowrap;
+        transform: translateX(0%);
+        animation: textAutoRotate 44s linear infinite;
+        animation-play-state: running;
 
         i {
             color: #106efd;
@@ -35,6 +38,32 @@
             top: -2px;
             margin: 0 0.5vw;
         }
+    }
+
+    &:hover {
+        h3 {
+            animation-play-state: paused;
+        }
+    }
+}
+
+@keyframes textAutoRotate {
+    0% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:767px) {
+    .marquee-section h3 {
+        font-size: 5vw;
     }
 }
 

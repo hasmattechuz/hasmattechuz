@@ -239,6 +239,9 @@
   flex-wrap: nowrap;
   gap: 12px;
   white-space: nowrap;
+  transform: translateX(0%);
+  animation: textAutoRotate 44s linear infinite;
+  animation-play-state: running;
 }
 .marquee-section h3 i {
   color: #106efd;
@@ -254,7 +257,27 @@
   top: -2px;
   margin: 0 0.5vw;
 }
+.marquee-section:hover h3 {
+  animation-play-state: paused;
+}
 
+@keyframes textAutoRotate {
+  0% {
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 767px) {
+  .marquee-section h3 {
+    font-size: 5vw;
+  }
+}
 /**********************************/
 /****** End of Marquee SCSS *******/
 /**********************************/
@@ -458,10 +481,10 @@
     opacity: 0 !important;
   }
   .btn-hamburger-close .line:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(7px) rotate(0deg);
   }
   .btn-hamburger-close .line:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(0deg);
   }
   .header.active .nav-dv {
     right: 0;
@@ -493,11 +516,17 @@
   .header.active .btn-hamburger-close .line {
     opacity: 1;
   }
+  .header.active .btn-hamburger-close .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .header.active .btn-hamburger-close .line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .header.active .backdrop-menu {
+    display: flex;
+  }
   .active-huburger-body {
     overflow: hidden;
-  }
-  .active-huburger-body .backdrop-menu {
-    display: flex;
   }
 }
 @keyframes fadeInUp {
@@ -522,7 +551,9 @@
   .auth-btn-dv {
     gap: 10px;
   }
-  .btn, .btn-outline-white, .btn-primary-fill {
+  .btn,
+  .btn-outline-white,
+  .btn-primary-fill {
     --bs-btn-padding-y: 0.5rem;
     --bs-btn-padding-x: 1rem;
     --bs-btn-font-size: 14px;
