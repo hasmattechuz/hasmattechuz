@@ -640,6 +640,8 @@ footer {
 .swiper-hero {
   position: relative;
   color: #fff;
+  /* Swiper animation */
+  /* End of Swiper animation */
 }
 .swiper-hero .swiper-slide {
   display: flex;
@@ -683,6 +685,25 @@ footer {
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 30px;
+}
+.swiper-hero .swiper-slide [class*=animate__] {
+  animation-name: none;
+  visibility: hidden;
+}
+.swiper-hero .swiper-slide.swiper-slide-active [class*=animate__] {
+  visibility: visible;
+}
+.swiper-hero .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInUp {
+  animation-name: slideInUp;
+}
+.swiper-hero .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInDown {
+  animation-name: slideInDown;
+}
+.swiper-hero .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInLeft {
+  animation-name: slideInLeft;
+}
+.swiper-hero .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInRight {
+  animation-name: slideInRight;
 }
 
 .swiper-controls {
@@ -730,7 +751,7 @@ footer {
   background: rgba(255, 255, 255, 0.7);
 }
 .swiper-controls .swiper-pagination {
-  bottom: -2.8rem;
+  bottom: 0.6rem;
   position: absolute !important;
   pointer-events: all;
 }
@@ -743,11 +764,11 @@ footer {
   height: 1rem;
   margin: 0 0.3rem;
   padding: 0;
-  background: #aab0bc;
-  opacity: 0.6;
   border-radius: 100%;
   border: 2px solid transparent;
   transform: scale(0.6);
+  background: rgba(255, 255, 255, 0.4588235294);
+  opacity: 1;
 }
 .swiper-controls .swiper-pagination .swiper-pagination-bullet:hover {
   transform: scale(1);
@@ -758,46 +779,9 @@ footer {
 .swiper-controls .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   transform: scale(1);
   background: none;
-  border-color: #000;
-}
-
-/* Swiper animation */
-.swiper-container .swiper-slide [class*=animate__] {
-  animation-name: none;
-  visibility: hidden;
-}
-
-.swiper-container .swiper-slide.swiper-slide-active [class*=animate__] {
-  visibility: visible;
-}
-.swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInUp {
-  animation-name: slideInUp;
-}
-.swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInDown {
-  animation-name: slideInDown;
-}
-.swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInLeft {
-  animation-name: slideInLeft;
-}
-.swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInRight {
-  animation-name: slideInRight;
-}
-
-/* End of Swiper animation */
-/* Swiper Pagination Dot */
-.dots-over .swiper-pagination {
-  bottom: 0.6rem;
-}
-.dots-over .swiper-pagination .swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.4588235294);
-  opacity: 1;
-}
-.dots-over .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: none;
   border-color: #fff;
 }
 
-/* End of Swiper Pagination Dot */
 @media (max-width: 1200px) {
   .swiper-txt-card {
     max-width: 500px;
@@ -839,16 +823,16 @@ footer {
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .swiper-controls .swiper-navigation .swiper-button {
-    top: auto;
-    bottom: 10px;
-  }
-  .dots-over .swiper-pagination {
+  .swiper-controls .swiper-pagination {
     bottom: 14px;
     left: 70px;
     width: calc(100% - 140px);
   }
-  .dots-over .swiper-pagination .swiper-pagination-bullet {
+  .swiper-controls .swiper-pagination .swiper-button {
+    top: auto;
+    bottom: 10px;
+  }
+  .swiper-controls .swiper-pagination .swiper-pagination-bullet {
     width: 0.75rem;
     height: 0.75rem;
     margin: 0 0.25rem;
