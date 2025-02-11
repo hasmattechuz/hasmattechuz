@@ -12,6 +12,10 @@ footer {
 .footer {
     color: #cacaca;
 
+    .row {
+        --bs-gutter-y: 30px;
+    }
+
     .btn.btn-primary {
         padding: 10px 20px;
     }

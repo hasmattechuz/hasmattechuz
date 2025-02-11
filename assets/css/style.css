@@ -474,6 +474,9 @@ footer {
 .footer {
   color: #cacaca;
 }
+.footer .row {
+  --bs-gutter-y: 30px;
+}
 .footer .btn.btn-primary {
   padding: 10px 20px;
 }
