@@ -291,6 +291,10 @@ a {
   -webkit-backdrop-filter: blur(3px);
 }
 
+.nav-list:has(.menu-item > a:hover) .menu-item > a:not(:hover) {
+  opacity: 0.6;
+}
+
 @media (max-width: 1024px) {
   .backdrop-menu {
     display: none;
