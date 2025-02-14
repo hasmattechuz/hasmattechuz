@@ -3,11 +3,12 @@
 /*********************************/
 
 "use strict";
-var theme = {
+var techuz = {
   init: function () {
-    theme.backgroundImage();
-    theme.swiperSlider();
-    theme.addEventListeners();
+    techuz.backgroundImage();
+    techuz.addEventListeners();
+    techuz.swiperSlider();
+    techuz.typeEffects();
   },
 
   /*** Background Image * Adds a background image link via data attribute "data-image-src" */
@@ -27,8 +28,8 @@ var theme = {
 
   /*** Add event listeners for resize and orientation change */
   addEventListeners: () => {
-    window.addEventListener("resize", theme.backgroundImage);
-    window.addEventListener("orientationchange", theme.backgroundImage);
+    window.addEventListener("resize", techuz.backgroundImage);
+    window.addEventListener("orientationchange", techuz.backgroundImage);
   },
 
   swiperSlider: function () {
@@ -49,9 +50,31 @@ var theme = {
       },
     });
   },
+
+  typeEffects: function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const splitTypes = document.querySelectorAll(".reveal-type");
+    
+    splitTypes.forEach((char) => {
+      const text = new SplitType(char, { types: 'words, chars' });
+      
+      gsap.from(text.chars, {
+        scrollTrigger: {
+            trigger: char,
+            start: 'top 80%',
+            end: 'top 20%',
+            scrub: true,
+        },
+        opacity: 0.2,
+        y: 20,
+        stagger: 0.05,
+      });
+    });
+  }
 };
 
-theme.init();
+techuz.init();
 /*********************************/
 /***** End of Banner Script ******/
 /*********************************/

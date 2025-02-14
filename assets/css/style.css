@@ -909,5 +909,16 @@ footer {
 /**********************************/
 /****** End of Marquee SCSS *******/
 /**********************************/
+.block-section {
+  padding: 80px;
+}
+.block-section blockquote {
+  font-size: 44px;
+  list-style: 1.5;
+}
+.block-section blockquote b {
+  color: #0d6efd;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=style.css.map */
