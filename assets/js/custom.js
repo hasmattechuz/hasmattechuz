@@ -141,7 +141,6 @@ var techuz = {
 
   typeEffects: function () {
     gsap.registerPlugin(ScrollTrigger);
-
     const splitTypes = document.querySelectorAll(".reveal-type");
 
     splitTypes.forEach((char) => {
@@ -153,6 +152,7 @@ var techuz = {
           start: "top 80%",
           end: "top 20%",
           scrub: true,
+          markers: true
         },
         opacity: 0.2,
         y: 20,
@@ -181,10 +181,19 @@ var techuz = {
         //console.log("initCards()", cardHeight);
         cards.forEach((card, index) => {
           if (index > 0) {
-            gsap.set(card, { y: index * cardHeight });
+            gsap.set(card, {
+              y: index * cardHeight,
+            });
             animation.to(
               card,
-              { y: 0, duration: index * 0.5, ease: "none" },
+              {
+                y: 0,
+                duration: index * 0.5,
+                ease: "none",
+                onComplete: () => {
+                  card.classList.add("active");
+                },
+              },
               0
             );
           }
@@ -198,7 +207,7 @@ var techuz = {
         pin: true,
         end: () => `+=${cards.length * cardHeight + stickySpace.offsetHeight}`,
         scrub: true,
-        toggleClass: "active",
+        toggleClass: "active-wrapper",
         animation: animation,
         //markers: true,
         invalidateOnRefresh: true,
