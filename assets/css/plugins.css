@@ -22,17 +22,17 @@
 }
 
 .animate__animated.animate__delay-2s {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: calc(var(--animate-delay) * 1.5);
+    animation-delay: calc(var(--animate-delay) * 1.5);
+}
+
+.animate__animated.animate__delay-3s {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
     -webkit-animation-delay: calc(var(--animate-delay) * 2);
     animation-delay: calc(var(--animate-delay) * 2);
-}
-
-.animate__animated.animate__delay-3s {
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-    -webkit-animation-delay: calc(var(--animate-delay) * 3);
-    animation-delay: calc(var(--animate-delay) * 3);
 }
 
 @media (prefers-reduced-motion: reduce),

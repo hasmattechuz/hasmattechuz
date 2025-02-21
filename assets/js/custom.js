@@ -118,7 +118,7 @@ var techuz = {
       loop: true,
       spaceBetween: 0,
       autoplay: {
-        delay: 6000,
+        delay: 600000,
       },
       pagination: {
         el: ".swiper-pagination",
@@ -152,7 +152,7 @@ var techuz = {
           start: "top 80%",
           end: "top 20%",
           scrub: true,
-          markers: true
+          // markers: true
         },
         opacity: 0.2,
         y: 20,
