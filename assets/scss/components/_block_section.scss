@@ -18,13 +18,10 @@
     }
 }
 
-/*****************************/
-/***** End of Block SCSS *****/
-/*****************************/
 .arrow-animation {
     width: 100px;
     height: 100%;
-    background-image: url(../images/photos/shape.svg);
+    // background-image: url(../images/photos/shape.svg);
     background-size: 100% auto;
     background-repeat: repeat-y;
     animation: moveArrow 44s linear(15 -70%, 0.1 100%) infinite;
@@ -50,3 +47,6 @@
         background-position: 0 115%; /* Should be at least the height of one full cycle */
     }
 }
+/*****************************/
+/***** End of Block SCSS *****/
+/*****************************/
