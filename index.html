@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techuz.Design</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    
+    <link rel="preload" href="./assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/css/bootstrap.min.css"></noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/plugins.css">
-    <!-- <link rel="stylesheet" href="./assets/css/animate.min.css"> -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body>
@@ -24,7 +26,7 @@
                     
                     <div class="logo-dv">
                         <a href="#" class="logo-link">
-                            <img src="assets/images/techuz_design.svg" alt="" class="img-logo img-fluid" />
+                            <img src="assets/images/techuz_design.svg" alt="" class="img-logo img-fluid" loading="lazy" />
                         </a>
                     </div>
 
@@ -230,7 +232,7 @@
                     <div class="col-sm-4 col-xl-3">
                         <div class="widget">
                             <a href="#" class="logo-link-footer mb-4">
-                                <img class="img-fluid" src="assets/images/techuz_design.svg" alt="" />
+                                <img class="img-fluid" src="assets/images/techuz_design.svg" alt="" loading="lazy" />
                             </a>
                             <p class="mb-4">Build Innovate Success <br>The Smart Way with AI <br> <u><i>Web Excellence.</i></u></p>
                             <ul class="social-icons-list">
@@ -310,13 +312,13 @@
             </div>
         </footer>
     </div>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="assets/js/gsap-scroll-smoother.js"></script>
-<script src="https://unpkg.com/split-type"></script>
-<script src="assets/js/custom.js"></script>
+
+<script src="assets/js/jquery.min.js" defer></script>
+<script src="assets/js/swiper-bundle.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/split-type" defer></script>
+<script src="assets/js/custom.js" defer></script>
 
 </body>
 </html>
