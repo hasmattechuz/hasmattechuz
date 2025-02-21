@@ -24,7 +24,7 @@
 .arrow-animation {
     width: 100px;
     height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg width='152' height='208' viewBox='0 0 152 208' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.7'%3E%3Cpath d='M117.436 207.708L73.4317 163.704L34.3493 202.786L0 168.437L73.4375 94.999L151.791 173.353L117.436 207.708Z' fill='url(%23paint0_linear_17_12)' fill-opacity='0.42'/%3E%3Cpath d='M117.436 112.707L73.4317 68.7035L34.3493 107.785L0 73.4366L73.4375 -0.000976562L151.791 78.3522L117.436 112.707Z' fill='url(%23paint1_linear_17_12)' fill-opacity='0.6'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_17_12' x1='75.9996' y1='95.0006' x2='75.9996' y2='186.501' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%237847A9'/%3E%3Cstop offset='1' stop-color='%235D397F'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_17_12' x1='75.9996' y1='0.0005694' x2='75.9996' y2='93.5006' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%237847A9'/%3E%3Cstop offset='1' stop-color='%235D397F'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-image: url(../images/photos/shape.svg);
     background-size: 100% auto;
     background-repeat: repeat-y;
     animation: moveArrow 44s linear(15 -70%, 0.1 100%) infinite;
@@ -32,7 +32,7 @@
     bottom: 0;
     right: 30px;
     pointer-events: none;
-    opacity: 0.2;
+    opacity: 0.1;
     transform: rotate(-180deg);
 }
 
