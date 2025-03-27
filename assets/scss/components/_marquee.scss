@@ -6,6 +6,12 @@
     padding: 30px 0;
     text-align: center;
     background: #fff2e3;
+    background: radial-gradient(circle at top left, rgba(255, 69, 0, 0.8), transparent),
+    radial-gradient(circle at top, rgba(0, 0, 255, 0.8), transparent),
+    radial-gradient(circle at bottom right, rgba(128, 0, 128, 0.8), transparent),
+    black;
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
     overflow: hidden;
 
     h3 {
@@ -21,6 +27,7 @@
         transform: translateX(0%);
         animation: textAutoRotate 44s linear infinite;
         animation-play-state: running;
+        color: #fff;
 
         i {
             color: #106efd;
@@ -44,6 +51,18 @@
         h3 {
             animation-play-state: paused;
         }
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 100%;
     }
 }
 

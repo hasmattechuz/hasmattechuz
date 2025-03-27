@@ -1,9 +1,16 @@
 :root {
     --font-family: 'Manrope', sans-serif;
     --unbounded-family: "Unbounded", serif;
+    --whiteColor: #fff;
     --background-color: #000;
-    --text-color: #fff;
-    --button-color: #fff;
+    --text-color: var(--whiteColor);
+    --button-color: var(--whiteColor);
+
+    /* Light Mode */
+    --primaryColor: #0d6efd;
+
+    /* End of Light Mode */
+
     --bs-gutter-x: 30px;
 }
 
@@ -49,19 +56,19 @@ a {
 }
 
 .btn-outline-white {
-    --bs-btn-color: #fff;
-    --bs-btn-border-color: #fff;
+    --bs-btn-color: var(--whiteColor);
+    --bs-btn-border-color: var(--whiteColor);
     --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #fff;
-    --bs-btn-hover-border-color: #fff;
+    --bs-btn-hover-bg: var(--whiteColor);
+    --bs-btn-hover-border-color: var(--whiteColor);
     --bs-btn-focus-shadow-rgb: 255, 255, 255;
     --bs-btn-active-color: #343f52;
-    --bs-btn-active-bg: #fff;
-    --bs-btn-active-border-color: #fff;
+    --bs-btn-active-bg: var(--whiteColor);
+    --bs-btn-active-border-color: var(--whiteColor);
     --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-color: var(--whiteColor);
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #fff;
+    --bs-btn-disabled-border-color: var(--whiteColor);
     --bs-gradient: none;
     --bs-btn-padding-y: 0.75rem;
     --bs-btn-padding-x: 1.5rem;
@@ -72,25 +79,25 @@ a {
 }
 
 .btn-primary-fill {
-    --bs-btn-color: #fff;
-    --bs-btn-border-color: #0d6efd;
-    --bs-btn-hover-color: #fff;
+    --bs-btn-color: var(--whiteColor);
+    --bs-btn-border-color: var(--primaryColor);
+    --bs-btn-hover-color: var(--whiteColor);
     --bs-btn-hover-bg: #0b5ed7;
     --bs-btn-hover-border-color: #0b5ed7;
     --bs-btn-focus-shadow-rgb: 255, 255, 255;
-    --bs-btn-active-color: #0d6efd;
-    --bs-btn-active-bg: #fff;
-    --bs-btn-active-border-color: #fff;
+    --bs-btn-active-color: var(--primaryColor);
+    --bs-btn-active-bg: var(--whiteColor);
+    --bs-btn-active-border-color: var(--whiteColor);
     --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-color: var(--whiteColor);
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #fff;
+    --bs-btn-disabled-border-color: var(--whiteColor);
     --bs-gradient: none;
     --bs-btn-padding-y: 0.75rem;
     --bs-btn-padding-x: 1.5rem;
     --bs-btn-font-size: 1rem;
     --bs-btn-border-radius: 4rem;
-    --bs-btn-bg: #0d6efd;
+    --bs-btn-bg: var(--primaryColor);
 }
 
 i.icon-arrow {
@@ -129,4 +136,10 @@ i.icon-arrow::after{
 
 .btn-outline-white:hover i.icon-arrow::after {
     transform: translateX(0) translateY(0);
+}
+
+.btn-mode {
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }

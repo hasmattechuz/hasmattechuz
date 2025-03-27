@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techuz.Design</title>
-    
-    <link rel="preload" href="./assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./assets/css/bootstrap.min.css"></noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/plugins.css">
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
 
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/plugins.css" onload="this.media='all'">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" onload="this.media='all'">
+    <link rel="stylesheet" href="./assets/css/style.css" onload="this.media='all'">
 </head>
 
 <body>
@@ -23,10 +21,11 @@
             <div class="container header-container">
                 <div class="header-dv">
                     <div class="backdrop-menu"></div>
-                    
+
                     <div class="logo-dv">
                         <a href="#" class="logo-link">
-                            <img src="assets/images/techuz_design.svg" alt="" class="img-logo img-fluid" loading="lazy" />
+                            <img src="assets/images/techuz_design.svg" alt="" class="img-logo img-fluid"
+                                loading="lazy" />
                         </a>
                     </div>
 
@@ -40,7 +39,8 @@
                             <ul class="nav-list">
                                 <li class="menu-item active"><a href="#">Home</a></li>
                                 <li class="menu-item"><a href="#">About</a></li>
-                                <li class="menu-item menu-item-has-children"><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                                <li class="menu-item menu-item-has-children"><a href="#">Services <i
+                                            class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown">
                                         <li><a href="#">Service 1</a></li>
                                         <li><a href="#">Service 2</a></li>
@@ -76,48 +76,72 @@
             <section class="slider-banner1">
                 <div class="swiper swiper-container swiper-hero" id="swiper-hero1">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide bg-image" data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg1.webp" data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg1-mobile.webp">
+                        <div class="swiper-slide bg-image"
+                            loading="lazy"
+                            data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg1.webp"
+                            data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg1-mobile.webp">
                             <div class="container h-100">
                                 <div class="row h-100">
                                     <div class="col-xl-8">
                                         <div class="swiper-txt-card">
-                                            <h2 class="animate__animated animate__slideInDown animate__delay-1s">An agile team ready to build your next product.</h2>
-                                            <p class="animate__animated animate__slideInRight animate__delay-2s">We design for conversion. We code for results. We build for scale. <br> Let's build your next success story.</p>
-                                            <div class="btn-dv animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-outline-white">Get In Touch <i class="icon-arrow"></i></a></div>
+                                            <h2 class="animate__animated animate__slideInDown animate__delay-1s">An
+                                                agile team ready to build your next product.</h2>
+                                            <p class="animate__animated animate__slideInRight animate__delay-2s">We
+                                                design for conversion. We code for results. We build for scale. <br>
+                                                Let's build your next success story.</p>
+                                            <div class="btn-dv animate__animated animate__slideInUp animate__delay-3s">
+                                                <a href="#" class="btn btn-outline-white">Get In Touch <i
+                                                        class="icon-arrow"></i></a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide bg-image" data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg2.webp" data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg2-mobile.webp">
+                        <div class="swiper-slide bg-image"
+                            loading="lazy"
+                            data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg2.webp"
+                            data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg2-mobile.webp">
                             <div class="container h-100">
                                 <div class="row center-row justify-content-center text-center h-100">
                                     <div class="col-xl-6">
                                         <div class="swiper-txt-card">
-                                            <h2 class="animate__animated animate__slideInDown animate__delay-1s">We bring solutions to make life easier.</h2>
-                                            <p class="animate__animated animate__slideInRight animate__delay-2s">We are a creative company that focuses on long term relationships with customers.</p>
-                                            <div class="btn-dv animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-outline-white"> Read More <i class="icon-arrow"></i></a></div>
+                                            <h2 class="animate__animated animate__slideInDown animate__delay-1s">We
+                                                bring solutions to make life easier.</h2>
+                                            <p class="animate__animated animate__slideInRight animate__delay-2s">We are
+                                                a creative company that focuses on long term relationships with
+                                                customers.</p>
+                                            <div class="btn-dv animate__animated animate__slideInUp animate__delay-3s">
+                                                <a href="#" class="btn btn-outline-white"> Read More <i
+                                                        class="icon-arrow"></i></a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide bg-image" data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg3.webp" data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg3-mobile.webp">
+                        <div class="swiper-slide bg-image"
+                            loading="lazy"
+                            data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg3.webp"
+                            data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg3-mobile.webp">
                             <div class="container h-100">
                                 <div class="row h-100">
                                     <div class="col-xl-6 offset-xl-6">
                                         <div class="swiper-txt-card">
-                                            <h2 class="animate__animated animate__slideInDown animate__delay-1s">We bring solutions to make life easier.</h2>
-                                            <p class="animate__animated animate__slideInRight animate__delay-2s">We are a creative company that focuses on long term relationships with customers.</p>
-                                            <div class="btn-dv animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-outline-white"> Read More <i class="icon-arrow"></i></a></div>
+                                            <h2 class="animate__animated animate__slideInDown animate__delay-1s">We
+                                                bring solutions to make life easier.</h2>
+                                            <p class="animate__animated animate__slideInRight animate__delay-2s">We are
+                                                a creative company that focuses on long term relationships with
+                                                customers.</p>
+                                            <div class="btn-dv animate__animated animate__slideInUp animate__delay-3s">
+                                                <a href="#" class="btn btn-outline-white"> Read More <i
+                                                        class="icon-arrow"></i></a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div class="swiper-controls">
@@ -134,12 +158,46 @@
             <!-- Text gsap animation -->
             <section class="block-section">
                 <div class="container">
-                    <blockquote class="reveal-type">
-                        We are not the new kid on the block; we don’t consider ourselves the “old” players either. Because even after <b>12 years</b> in the industry, delivering <b>250+</b> projects for clients across <b>4 continents</b>, and a dozen of awards, we believe we're just getting started.
-                    </blockquote>
-
-                    <div class="arrow-animation left-arrow-animation"></div>
-                    <div class="arrow-animation"></div>
+                    
+                            <blockquote class="reveal-type">
+                                We are not the new kid on the block; we don’t consider ourselves the “old” players
+                                either. Because even after <b>12 years</b> in the industry, delivering <b>250+</b>
+                                projects for clients across <b>4 continents</b>, and a dozen of awards, we believe we're
+                                just getting started.
+                            </blockquote>
+                         <div class="arrow-root-anime">
+                                <div class="arrow-card-animation">
+                                    <svg loading="lazy" class="arrows" width="152" height="343" viewBox="0 0 152 343" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="a1"
+                                            d="M117.436 303.707L73.4321 259.703L34.3497 298.785L0.000351846 264.436L73.4379 190.998L151.791 269.352L117.436 303.707Z"
+                                            fill="url(#paint0_linear_176_1850)" fill-opacity="0.7" />
+                                        <path class="a2"
+                                            d="M117.436 207.707L73.4321 163.703L34.3497 202.785L0.000351846 168.436L73.4379 94.9984L151.791 173.352L117.436 207.707Z"
+                                            fill="url(#paint1_linear_176_1850)" fill-opacity="0.42" />
+                                        <path class="a3"
+                                            d="M117.436 112.707L73.4321 68.7029L34.3497 107.785L0.000351846 73.436L73.4379 -0.00155973L151.791 78.3516L117.436 112.707Z"
+                                            fill="url(#paint2_linear_176_1850)" fill-opacity="0.6" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_176_1850" x1="76" y1="286.5" x2="76"
+                                                y2="191" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#482C62" />
+                                                <stop offset="1" stop-color="#5D397F" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_176_1850" x1="76" y1="95" x2="76"
+                                                y2="186.5" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#7847A9" />
+                                                <stop offset="1" stop-color="#5D397F" />
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_176_1850" x1="76" y1="-6.41421e-06"
+                                                x2="76" y2="93.5" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#7847A9" />
+                                                <stop offset="1" stop-color="#5D397F" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
                 </div>
             </section>
             <!-- End of Text gsap animation -->
@@ -148,7 +206,7 @@
             <section class="portfolio-stack-section">
                 <div class="container">
                     <div class="row">
-        
+
                         <!-- Inner Section Content Start -->
                         <div class="col-12">
                             <div class="inner__content">
@@ -160,7 +218,9 @@
                                         <div class="portfolio-stack">
                                             <!-- portfolio stack single item -->
                                             <div class="stack-item">
-                                                <div class="portfolio-stack__inner bg-image" data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg1.webp" data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg1-mobile.webp">
+                                                <div class="portfolio-stack__inner bg-image"
+                                                    data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg1.webp"
+                                                    data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg1-mobile.webp">
                                                     <div class="portfolio-stack__descr">
                                                         <h3 class="reveal-type2">Anime style fantasy scenes</h3>
                                                         <p class="reveal-type2">Lorem ipsum, dolor sit amet consectetur
@@ -170,7 +230,9 @@
                                             </div>
                                             <!-- portfolio stack single item -->
                                             <div class="stack-item">
-                                                <div class="portfolio-stack__inner bg-image" data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg2.webp" data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg2-mobile.webp">
+                                                <div class="portfolio-stack__inner bg-image"
+                                                    data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg2.webp"
+                                                    data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg2-mobile.webp">
                                                     <div class="portfolio-stack__descr center__descr">
                                                         <h3 class="reveal-type2">Anime style fantasy scenes</h3>
                                                         <p class="reveal-type2">Lorem ipsum, dolor sit amet consectetur
@@ -180,7 +242,9 @@
                                             </div>
                                             <!-- portfolio stack single item -->
                                             <div class="stack-item">
-                                                <div class="portfolio-stack__inner bg-image" data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg3.webp" data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg3-mobile.webp">
+                                                <div class="portfolio-stack__inner bg-image"
+                                                    data-image-src="https://techuz-html.netlify.app/assets/images/photos/bg3.webp"
+                                                    data-mobile-image-src="https://techuz-html.netlify.app/assets/images/photos/mobile/bg3-mobile.webp">
                                                     <div class="portfolio-stack__descr right__descr">
                                                         <h3 class="reveal-type2">Anime style fantasy scenes</h3>
                                                         <p class="reveal-type2">Lorem ipsum, dolor sit amet consectetur
@@ -192,7 +256,7 @@
                                     </div>
                                 </div>
                                 <!-- Content Block - Portfolio Stacking Cards End -->
-                                
+
                             </div>
                         </div>
                         <!-- Inner Section Content End -->
@@ -201,7 +265,7 @@
                 </div>
             </section>
             <!-- End of stack animation -->
-            
+
         </main>
 
         <section class="marquee-section">
@@ -218,8 +282,12 @@
                 </span>
                 <i class="fas fa-star-of-life"></i>
                 <span>
-                    Made with 
-                    <svg class="mx-1" width="20" height="18" viewBox="0 0 20 18" fill="none"><path d="M9.9402 3.17974C10.7474 1.30813 12.5915 0.000391304 14.7363 0.000391304C17.6256 0.000391304 19.7064 2.41826 19.968 5.29983C19.968 5.29983 20.1092 6.01513 19.7984 7.30291C19.3752 9.05674 18.3804 10.6149 17.0391 11.8041L9.9402 18L2.96086 11.8037C1.61963 10.6149 0.624813 9.05635 0.201605 7.30252C-0.109201 6.01474 0.0320015 5.29943 0.0320015 5.29943C0.293607 2.41787 2.37445 0 5.26371 0C7.40895 0 9.13298 1.30813 9.9402 3.17974Z" fill="#FF3D2E"></path></svg> 
+                    Made with
+                    <svg class="mx-1" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                        <path
+                            d="M9.9402 3.17974C10.7474 1.30813 12.5915 0.000391304 14.7363 0.000391304C17.6256 0.000391304 19.7064 2.41826 19.968 5.29983C19.968 5.29983 20.1092 6.01513 19.7984 7.30291C19.3752 9.05674 18.3804 10.6149 17.0391 11.8041L9.9402 18L2.96086 11.8037C1.61963 10.6149 0.624813 9.05635 0.201605 7.30252C-0.109201 6.01474 0.0320015 5.29943 0.0320015 5.29943C0.293607 2.41787 2.37445 0 5.26371 0C7.40895 0 9.13298 1.30813 9.9402 3.17974Z"
+                            fill="#FF3D2E"></path>
+                    </svg>
                     in India and serving worldwide
                 </span>
                 <i class="fas fa-star-of-life"></i>
@@ -234,7 +302,8 @@
                             <a href="#" class="logo-link-footer mb-4">
                                 <img class="img-fluid" src="assets/images/techuz_design.svg" alt="" loading="lazy" />
                             </a>
-                            <p class="mb-4">Build Innovate Success <br>The Smart Way with AI <br> <u><i>Web Excellence.</i></u></p>
+                            <p class="mb-4">Build Innovate Success <br>The Smart Way with AI <br> <u><i>Web
+                                        Excellence.</i></u></p>
                             <ul class="social-icons-list">
                                 <li>
                                     <a href="#" aria-label="X (Formerly Twitter)">
@@ -254,18 +323,18 @@
                             </ul>
                         </div>
                     </div>
-        
+
                     <div class="col-sm-4 col-xl-3">
                         <div class="widget">
                             <h4>Get in Touch</h4>
                             <address>1014-1020, 10th Floor,
-                            i-Square Corporate Park,
-                            Science City Road,
-                            Ahmedabad - 380060</address>
-                            <a href="mailto:#">info@email.com</a><br /> <a href="tel:#">00 (123) 456 78 90</a> 
+                                i-Square Corporate Park,
+                                Science City Road,
+                                Ahmedabad - 380060</address>
+                            <a href="mailto:#">info@email.com</a><br /> <a href="tel:#">00 (123) 456 78 90</a>
                         </div>
                     </div>
-        
+
                     <div class="col-sm-4 col-xl-3">
                         <div class="widget">
                             <h4>Quike Links</h4>
@@ -278,15 +347,15 @@
                             </ul>
                         </div>
                     </div>
-        
+
                     <div class="col-sm-12 col-xl-3">
                         <div class="widget news-letter-widget">
                             <h4>Our Newsletter</h4>
                             <p>Subscribe to our newsletter to get our news & deals delivered to you.</p>
                             <div class="newsletter-wrapper dark-fields">
                                 <div class="input-group form-floating">
-                                    <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address"
-                                        id="mce-EMAIL2">
+                                    <input type="email" value="" name="EMAIL" class="required email form-control"
+                                        placeholder="Email Address" id="mce-EMAIL2">
                                     <label for="mce-EMAIL2">Email Address</label>
                                     <input type="submit" value="Join" name="subscribe" class="btn btn-primary">
                                 </div>
@@ -313,12 +382,17 @@
         </footer>
     </div>
 
-<script src="assets/js/jquery.min.js" defer></script>
-<script src="assets/js/swiper-bundle.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-<script src="https://unpkg.com/split-type" defer></script>
-<script src="assets/js/custom.js" defer></script>
+    <button class="btn-mode">
+        <i class="fa-solid fa-sun"></i>
+    </button>
+
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="assets/js/custom.js" defer></script>
 
 </body>
+
 </html>

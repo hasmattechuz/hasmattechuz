@@ -87,7 +87,7 @@
         font-size: 36px;
         line-height: 1.5;
         margin-bottom: 10px;
-        color: #fff;
+        color: var(--whiteColor);
         font-weight: 400;
     }
 
@@ -95,8 +95,55 @@
         font-size: 20px;
         line-height: 1.5;
         font-weight: 400;
-        color: #fff;
+        color: var(--whiteColor);
         margin-bottom: 0;
+    }
+}
+
+@media (max-width:767px) {
+    .stack-wrapper {
+        h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .stack-item {
+            padding-top: 70px;
+            padding-bottom: 0;
+        }
+
+        .portfolio-stack__inner {
+            border-radius: 16px;
+            background-size: contain;
+            background-position: top;
+            background-color: #212528;
+        }
+        
+        .portfolio-stack__descr {
+            padding: 15px;
+            width: 100%;
+            left: auto;
+            right: auto;
+            margin: 0 auto;
+            background: #212528;
+            border-radius: 0;
+            text-align: center;
+
+            &.center__descr {
+                left: auto;
+                right: auto;
+            }
+
+            &.right__descr {
+                left: auto;
+                right: auto;
+                text-align: center;
+            }
+        }
     }
 }
 

@@ -33,7 +33,7 @@ footer {
     h4 {
         font-size: 20px;
         line-height: 1.5;
-        color: #fff;
+        color: var(--whiteColor);
         margin-bottom: 16px;
     }
 
@@ -51,7 +51,7 @@ footer {
         transition: all 0.8s;
 
         &:hover {
-            color: #fff;
+            color: var(--whiteColor);
         }
     }
 
@@ -126,7 +126,7 @@ footer {
                 width: 1px;
                 height: 18px;
                 display: inline-block;
-                background: #fff;
+                background: var(--whiteColor);
                 position: absolute;
                 left: -14px;
                 top: 4px;

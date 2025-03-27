@@ -4,7 +4,7 @@
 
 .swiper-hero {
     position: relative;
-    color: #fff;
+    color: var(--whiteColor);
 
     .swiper-slide {
         display: flex;
@@ -94,7 +94,7 @@
         pointer-events: all;
 
         .swiper-button {
-            background: #ffffffb3;
+            background: var(--whiteColor);
             color: #000;
             border: 0;
             box-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.02);
@@ -166,7 +166,7 @@
             &.swiper-pagination-bullet-active {
                 transform: scale(1);
                 background: none;
-                border-color: #fff;
+                border-color: var(--whiteColor);
             }
         }
     }
